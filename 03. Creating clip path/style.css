@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #555;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 900px;
+  height: 600px;
+  background-color: rgb(22, 21, 21);
+  position: relative;
+}
+
+.clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+
+}
+
+.clip1 {
+  background: url(images/insung-yoon-R-X4ZpQCw5g-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 43% 0, 30% 100%, 0% 100%);
+}
+.clip2 {
+  background: url(images/zhenyu-luo-Xxc8eHJ04J8-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+}
+.clip3 {
+  background: url(images/the-prototype-raMejfP1E4o-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(75% 0, 100% 0, 100% 100%, 63% 100%);
+}
+
+.wrapper:hover .clip {
+  clip-path : polygon(100% 0, 100% 0,100% 100% , 100% 100%);
+}
+
+.wrapper .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
+}
